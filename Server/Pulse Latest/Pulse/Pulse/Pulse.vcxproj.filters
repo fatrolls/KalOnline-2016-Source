@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{e5f1af9f-6826-4edd-968b-b6b26ae3e8da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Core\Sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{3d9b1c4a-795c-4369-8611-44ad7c09f3ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Headers">
+      <UniqueIdentifier>{99cf6f0b-0eee-484e-9f1e-ef1ea64c3ee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Sources">
+      <UniqueIdentifier>{649c7519-3390-49cf-a963-9c00779207f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modifications">
+      <UniqueIdentifier>{c253b778-65a3-46e2-85d7-cb24510a3704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modifications\Headers">
+      <UniqueIdentifier>{d31060f6-c51a-4eff-9d54-0c5e733bb953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modifications\Sources">
+      <UniqueIdentifier>{72bc2f8f-5433-4912-a6ab-f691b79bd11e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Deflections">
+      <UniqueIdentifier>{62c2e1da-73c3-4356-b7bd-482e505bf4f6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Core\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Core\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin.h">
+      <Filter>Core\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SDK\Deflection.h">
+      <Filter>SDK\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SDK\Deflector.h">
+      <Filter>SDK\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SDK\Hooks.h">
+      <Filter>SDK\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SDK\Interface.h">
+      <Filter>SDK\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SDK\Lock.h">
+      <Filter>SDK\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SDK\Memory.h">
+      <Filter>SDK\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SDK\Server.h">
+      <Filter>SDK\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SDK\Tools.h">
+      <Filter>SDK\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets.h">
+      <Filter>Modifications\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="InitMods.h">
+      <Filter>Modifications\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Modifications\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>Modifications\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Modifications\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Npc.h">
+      <Filter>Modifications\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Modifications\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FriendList.h">
+      <Filter>Modifications\Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Core\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin.cpp">
+      <Filter>Core\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SDK\Hooks.cpp">
+      <Filter>SDK\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SDK\Interface.cpp">
+      <Filter>SDK\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SDK\Memory.cpp">
+      <Filter>SDK\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SDK\Tools.cpp">
+      <Filter>SDK\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets.cpp">
+      <Filter>Modifications\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="InitMods.cpp">
+      <Filter>Modifications\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CSocketProcess.cpp">
+      <Filter>Deflections</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayerWrite.cpp">
+      <Filter>Deflections</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Modifications\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>Modifications\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterBlob.cpp">
+      <Filter>Deflections</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Modifications\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Npc.cpp">
+      <Filter>Modifications\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Modifications\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="FriendList.cpp">
+      <Filter>Modifications\Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

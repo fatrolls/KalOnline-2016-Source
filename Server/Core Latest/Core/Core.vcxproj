@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1EDFCAE1-9CF5-42F7-9751-66D16C902AAE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Core</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;CORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AnkleAmputate.h" />
+    <ClInclude Include="ArmorBreaker.h" />
+    <ClInclude Include="ArmorPut.h" />
+    <ClInclude Include="ArrowExplosion.h" />
+    <ClInclude Include="ArrowRain.h" />
+    <ClInclude Include="ArrowsOfTheMaster.h" />
+    <ClInclude Include="Assault.h" />
+    <ClInclude Include="AutoLearn.h" />
+    <ClInclude Include="Behead.h" />
+    <ClInclude Include="Blessing.h" />
+    <ClInclude Include="BlessingOfAgility.h" />
+    <ClInclude Include="BlessingOfCriticalHit.h" />
+    <ClInclude Include="BlessingOfHealth.h" />
+    <ClInclude Include="BlessingOfIntelligence.h" />
+    <ClInclude Include="BlessingOfStrength.h" />
+    <ClInclude Include="BloodSuction.h" />
+    <ClInclude Include="Bombing.h" />
+    <ClInclude Include="BuyItemEx.h" />
+    <ClInclude Include="Calculations.h" />
+    <ClInclude Include="Calls.h" />
+    <ClInclude Include="CanAttack.h" />
+    <ClInclude Include="CastleWarFix.h" />
+    <ClInclude Include="CBaseDelete.h" />
+    <ClInclude Include="CDBProcess.h" />
+    <ClInclude Include="CombativeSpirit.h" />
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="Confusion.h" />
+    <ClInclude Include="ContinuesSkill.h" />
+    <ClInclude Include="CounterDamage.h" />
+    <ClInclude Include="CreateBuff.h" />
+    <ClInclude Include="CriticalDiffusion.h" />
+    <ClInclude Include="CriticalStrike.h" />
+    <ClInclude Include="CutDownExp.h" />
+    <ClInclude Include="DefenseChangePrefix.h" />
+    <ClInclude Include="DefenseImprovement.h" />
+    <ClInclude Include="DestroyingArmor.h" />
+    <ClInclude Include="DropItem.h" />
+    <ClInclude Include="DualShadow.h" />
+    <ClInclude Include="EagleStat.h" />
+    <ClInclude Include="EggExp.h" />
+    <ClInclude Include="EggSkill.h" />
+    <ClInclude Include="EggThunderbolt.h" />
+    <ClInclude Include="Exports.h" />
+    <ClInclude Include="ExpTable.h" />
+    <ClInclude Include="FatalWound.h" />
+    <ClInclude Include="FinalBlow.h" />
+    <ClInclude Include="FinalDamage.h" />
+    <ClInclude Include="Fireball.h" />
+    <ClInclude Include="FlameInjection.h" />
+    <ClInclude Include="Functions.h" />
+    <ClInclude Include="Hiding.h" />
+    <ClInclude Include="HighClassHiding.h" />
+    <ClInclude Include="IceArrow.h" />
+    <ClInclude Include="IChar.h" />
+    <ClInclude Include="Icicle.h" />
+    <ClInclude Include="IItem.h" />
+    <ClInclude Include="Incapacitation.h" />
+    <ClInclude Include="Interface.h" />
+    <ClInclude Include="IQuest.h" />
+    <ClInclude Include="ISkill.h" />
+    <ClInclude Include="ItemFixes.h" />
+    <ClInclude Include="ItemUse.h" />
+    <ClInclude Include="LevelUp.h" />
+    <ClInclude Include="LifeAbsorption.h" />
+    <ClInclude Include="LightningArrow.h" />
+    <ClInclude Include="LightningSlash.h" />
+    <ClInclude Include="Lisans.h" />
+    <ClInclude Include="Loader.h" />
+    <ClInclude Include="Lock.h" />
+    <ClInclude Include="MassiveFire.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="Mix.h" />
+    <ClInclude Include="MonsterBlob.h" />
+    <ClInclude Include="NormalHit.h" />
+    <ClInclude Include="OneHitStrike.h" />
+    <ClInclude Include="OnLoadPlayer.h" />
+    <ClInclude Include="Ornament.h" />
+    <ClInclude Include="Packet.h" />
+    <ClInclude Include="PasswordDecode.h" />
+    <ClInclude Include="PerfectDefense.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PowerfulWideningWound.h" />
+    <ClInclude Include="Process.h" />
+    <ClInclude Include="ProvocationOfBlow.h" />
+    <ClInclude Include="Punishment.h" />
+    <ClInclude Include="Quest.h" />
+    <ClInclude Include="ReadConfig.h" />
+    <ClInclude Include="RefiningWeapon.h" />
+    <ClInclude Include="RefreshBuff.h" />
+    <ClInclude Include="ReleasingTheEnergy.h" />
+    <ClInclude Include="RemoteLisans.h" />
+    <ClInclude Include="ResetContinueSkill.h" />
+    <ClInclude Include="Revival.h" />
+    <ClInclude Include="RevolveAttack.h" />
+    <ClInclude Include="Rupture.h" />
+    <ClInclude Include="SaveAllProperty.h" />
+    <ClInclude Include="SendMail.h" />
+    <ClInclude Include="ShadowSlash.h" />
+    <ClInclude Include="ShinRhoe.h" />
+    <ClInclude Include="ShoutOfDefense.h" />
+    <ClInclude Include="ShoutOfFightingSpirit.h" />
+    <ClInclude Include="Skill.h" />
+    <ClInclude Include="SkillPointer.h" />
+    <ClInclude Include="SkillUpgradeCheck.h" />
+    <ClInclude Include="SpeedUp.h" />
+    <ClInclude Include="SpinAttack.h" />
+    <ClInclude Include="SpinBlade.h" />
+    <ClInclude Include="SpinSlash.h" />
+    <ClInclude Include="SpiritOfTheArrows.h" />
+    <ClInclude Include="Start.h" />
+    <ClInclude Include="StatPointValue.h" />
+    <ClInclude Include="StoneOfBirth.h" />
+    <ClInclude Include="StoneOfChance.h" />
+    <ClInclude Include="Storage.h" />
+    <ClInclude Include="Strangle.h" />
+    <ClInclude Include="StrikeOfGod.h" />
+    <ClInclude Include="Stun.h" />
+    <ClInclude Include="SuicidalBlow.h" />
+    <ClInclude Include="Summon.h" />
+    <ClInclude Include="SwordDance.h" />
+    <ClInclude Include="TheBoomOfEarth.h" />
+    <ClInclude Include="TherapeuticTouch.h" />
+    <ClInclude Include="TheWaveOfEarth.h" />
+    <ClInclude Include="Thunderbolt.h" />
+    <ClInclude Include="Time.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Tools.h" />
+    <ClInclude Include="Trade.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="TwinBladeStrike.h" />
+    <ClInclude Include="VirulentArrow.h" />
+    <ClInclude Include="VitalStrike.h" />
+    <ClInclude Include="WalkOnTheAir.h" />
+    <ClInclude Include="WeaponChangePrefix.h" />
+    <ClInclude Include="WeaponPut.h" />
+    <ClInclude Include="WhirlwindFeather.h" />
+    <ClInclude Include="WrathOfHeaven.h" />
+    <ClInclude Include="ZilPoong.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Exports.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="IChar.cpp" />
+    <ClCompile Include="IItem.cpp" />
+    <ClCompile Include="Interface.cpp" />
+    <ClCompile Include="IQuest.cpp" />
+    <ClCompile Include="ISkill.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="Tools.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
